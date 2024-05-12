@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task 1</title>
+</head>
+<body>
+    <input type="text" placeholder="Name" class="name">
+    <input type="text" placeholder="Phone Number" class="phone">
+    <input type="email" placeholder="Email" class="email">
+    <input type="text" placeholder="Address" class="address">
+    <button>Submit</button>
+
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $("button").click(function(){
+            let name = $(".name").val();
+            let phone = $(".phone").val();
+            let email = $(".email").val();
+            let address = $(".address").val();
+
+            if(!name){
+                $(".name").attr("Placeholder" , 'Please Enter Your Name').addClass("alert")
+            }
+            if(!phone){
+                $(".phone").attr("Placeholder" , 'Please Enter Your Phone Number').addClass("alert")
+            }
+            if(!email){
+                $(".email").attr("Placeholder" , 'Please Enter Your Email').addClass("alert")
+            }
+            if(!address){
+                $(".address").attr("Placeholder" , 'Please Enter Your Address').addClass("alert")
+            }
+        })
+    </script>
+</body>
+</html>

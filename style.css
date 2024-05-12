@@ -1,0 +1,24 @@
+input{
+    padding: 10px;
+    outline: none;
+    width: 50%;
+    margin-top: 20px;
+    display: block;
+}
+button{
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.alert::placeholder{
+    color: red;
+    font-weight: bold;
+}
